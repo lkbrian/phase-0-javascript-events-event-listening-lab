@@ -1,8 +1,11 @@
-const input = document.getElementById("button");
+const alertButton = document.getElementById("button");
 function addingEventListener() {
-    function listen(){
-        alert(`just clicked my ${input.id}`);
-    }
-  input.addEventListener("click", listen);
+  function listen() {
+    const funFact =
+      "You just clicked me \n Fun fact  About me💡\n I am a <input tag >, a grand child to the <main tag> \n so i'm nested";
+
+    alert(`${funFact}`);
+  }
+  alertButton.addEventListener("click", listen);
 }
 addingEventListener();
